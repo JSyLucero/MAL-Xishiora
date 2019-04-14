@@ -10,5 +10,6 @@ body.ownlist {
 }
 
 div#list-container.list-container {
+  background: rgba(255, 255, 255, 0.3);
   width: 100%
 }
