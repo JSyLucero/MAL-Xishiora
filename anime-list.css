@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+body.ownlist {
+  background-image: url('https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/524220/9772df80462f9077d15a1175b30938cd25bebfaf.jpg') !important;
+  background-attachment: fixed !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+div#list-container.list-container {
+  width: 100%
+}
