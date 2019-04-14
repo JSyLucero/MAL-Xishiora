@@ -10,6 +10,31 @@ body.ownlist {
 }
 
 div#list-container.list-container {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+
   background: rgba(255, 255, 255, 0.3);
-  width: 100%
+  width: 100%;
+  border: none;
+  text-align: left;
+}
+
+div.cover-block {
+  display: none;
+}
+
+div#list-container.list-container {
+  flex-basis: 90%;
+}
+
+.status-menu-container {
+  width: 1058px;
+  height: 46px;
+  background-color: #FFF;
+  border-bottom: #EBEBEB 1px solid;
+  z-index: 1;
 }
