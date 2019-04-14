@@ -109,12 +109,22 @@ div#list-container.list-container > * > *.list-unit > *.list-status-title {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
-.search-container {
+.status-menu-container .search-container {
   position: absolute;
   top: -40px; right: 0;
 }
 
+#search-button {
+  cursor: pointer !important;
+  z-index: -1;
+  position: absolute;
+  margin-top: 0 !important;
+  top: 60%; right: 15px;
+  transform: translateY(-50%);
+}
+
 #search-box {
+  margin-top: 0 !important;
   margin-right: 5px;
   height: auto !important;
 }
@@ -138,8 +148,12 @@ div#list-container.list-container > * > *.list-unit > *.list-status-title {
 }
 
 .list-block {
+  margin-bottom: 25px;
+  
   border-radius: 4px;
   overflow: hidden;
+  
+  box-shadow: 0 5px 25px rgba(255, 255, 255, 0.35);
 }
 
 
@@ -174,6 +188,14 @@ div#list-container.list-container > * > *.list-unit > *.list-status-title {
   text-align: center;
   vertical-align: middle;
   border-bottom: none;
+}
+
+.list-menu-float {
+  border-left: none;
+}
+
+.list-menu-float .icon-menu.profile {
+  width: calc(100% - 1px);
 }
 
 .list-menu-float .icon-menu:not(:hover) {
