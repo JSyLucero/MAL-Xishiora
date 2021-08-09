@@ -19,7 +19,7 @@ body.ownlist::before {
     content: " ";
     height: 100%;
     width: 100%;
-    background: rgba(40, 40, 40, 0.3);
+    background: rgba(20, 20, 20, 0.3);
 }
 
 body.ownlist::after {
@@ -103,6 +103,13 @@ a {
   padding-top: 56.25% !important;
 
   color: #000;
+}
+
+#fancybox-inner > div:not([class]),
+#fancybox-inner > div[class=""] {
+  margin-top: -56.25%;
+  padding: 0 10px;
+  padding-top: 23%;
 }
 
 #fancybox-frame {
@@ -214,9 +221,8 @@ div#list-container.list-container > * > *.list-unit > *.list-status-title {
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 4px;
   background-color: rgba(40, 40, 40, 0.5);
-  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.35),
-                    0 5px 25px rgba(0, 0, 0, 0.7),
-                    0 5px 15px rgba(255, 255, 255, 0.35);
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.7),
+              0 5px 15px rgba(255, 255, 255, 0.35);
 
   transition: width ease-in-out 0.5s;
   z-index: 1;
@@ -225,9 +231,11 @@ div#list-container.list-container > * > *.list-unit > *.list-status-title {
 .status-menu-container.fixed {
   width: 75%;
   border-radius: 0;
-  box-shadow: inset 0 0 15px rgba(255, 255, 255, 0.35);
+  border-top: 0;
+  background-color: rgba(20,20,20,1.0);
+  box-shadow: none;
 
-  transition: width ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
 }
 
 .status-menu-container .status-button {
@@ -384,7 +392,7 @@ div.list-block {
 @media screen and (max-width: 1920px) {
 
   div#list-container.list-container {
-    padding-left: 50px;
+    padding-left: 0;
   }
 }
 
@@ -413,6 +421,10 @@ div.list-block {
 }
 
 @media screen and (max-width: 1152px) {
+  div#list-container.list-container {
+    padding-left: 50px;
+  }
+
   .list-table .list-table-header .header-title.tags, 
   .list-table .list-table-header .header-title.studio, 
   .list-table .list-table-header .header-title.licensor {
