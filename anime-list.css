@@ -20,6 +20,11 @@ td.data.score span {
   color: white; 
 }
 
+.td1.borderRBL {
+  padding-left: 3px;
+  color: white;
+}
+
 .list-block {
   position: relative;
 }
