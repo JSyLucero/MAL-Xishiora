@@ -2,13 +2,48 @@
   box-sizing: border-box;
 }
 
-body.ownlist {
-  background-color: black;
-  background-image: url('https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/524220/9772df80462f9077d15a1175b30938cd25bebfaf.jpg') !important;
+body.ownlist, .list-block {
+  background-color: rgb(211,223,235);
+  /*background-image: url('https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/524220/9772df80462f9077d15a1175b30938cd25bebfaf.jpg') !important;*/
+  background-image: url('https://pbs.twimg.com/media/FRrUdXFakAUXOSp?format=jpg&name=orig') !important;
   background-attachment: fixed !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  background-position: top left !important;
+  background-position: center 37.5% !important;
+}
+
+body.ownlist::after {
+  backdrop-filter: blur(7px);
+}
+
+td.data.score span {
+  color: white; 
+}
+
+.list-block {
+  position: relative;
+}
+
+.list-block::before {
+  z-indeX: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.375);
+}
+
+.list-block::after {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to top, rgba(180, 10, 255, 0.075), rgba(0, 0, 0, 0));
 }
 
 body.ownlist::before {
