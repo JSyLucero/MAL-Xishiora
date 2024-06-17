@@ -244,8 +244,9 @@ div#list-container.list-container > * > *.list-unit > *.list-status-title {
   flex-basis: 100%;
 }
 
-.list-status-title .text {
-  all: initial !important;
+.list-unit .list-status-title .text {
+  height: initial;
+  font-size: 1.5em;
 }
 
 .status-menu-container {
